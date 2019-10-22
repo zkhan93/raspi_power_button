@@ -2,8 +2,8 @@
 Description=Power Button service
 
 [Service]
-ExecStart=/home/pi/repos/rpi_power_button/venv/bin/python power_button.py
-WorkingDirectory=/home/pi/repos/rpi_power_button/
+ExecStart=REPO_DIR/venv/bin/python power_button.py
+WorkingDirectory=REPO_DIR
 Restart=Always
 User=root
 
