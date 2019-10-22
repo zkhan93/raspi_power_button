@@ -8,6 +8,12 @@ On button press, it should essentially touch these two pins together and then di
 
 ## Software Setup
 
+pre-requisites
+make sure you have `python3` and `virtualenv` installed
+```bash
+sudo apt-get install python3
+pip install virtualenv
+```
 
 clone the repository to `/home/pi/repos/rpi_power_button` (feel free to choose a different path) lets call this `REPO_DIR`,
 replace `REPO_DIR` with this path for all the following commands.
