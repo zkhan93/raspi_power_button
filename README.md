@@ -29,9 +29,10 @@ create a symlink of this power_button service which start the python script to l
 sudo ln -s REPO_DIR/power_button.service /etc/systemd/system/power_button.service
 ```
 
-modify `power_button.service` to replace REPO_DIR with the actual repo path
+modify `power_button.service` to replace REPO_DIR with the actual repo path.
+leave the first `REPO_DIR` as is.
 ```bash
-sed -i "s+REPO_DIR+${REPO_DIR}+g" power_button.service
+sed -i "s+REPO_DIR+REPO_DIR+g" power_button.service
 ```
 
 Enable the new service using systemd
