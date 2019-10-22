@@ -1,0 +1,11 @@
+[Unit]
+Description=Power Button service
+
+[Service]
+ExecStart=/home/pi/repos/raspi_power_button/venv/bin/python power_button.py
+WorkingDirectory=/home/pi/repos/raspi_power_button/
+Restart=Always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
