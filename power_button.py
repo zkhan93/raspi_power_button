@@ -1,6 +1,7 @@
 import RPi.GPIO as GPIO
 import logging
 import os
+import time
 
 logging.basicConfig()
 logger = logging.getLogger(__name__)
@@ -14,3 +15,5 @@ while True:
 		logger.info("Power button pressed")
 		os.system('shutdown now')
 		break
+	else:
+		time.sleep(0.5)
