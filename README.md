@@ -10,8 +10,7 @@ On button press, it should essentially touch these two pins together and then di
 
 
 clone the repository to `/home/pi/repos/rpi_power_button` (feel free to choose a different path) lets call this `REPO_DIR`,
-replace `REPO_DIR` with this path for all the followgin commands.
-You also have to replace `REPO_DIR` with this path in `power_button.service` file at 2 places.
+replace `REPO_DIR` with this path for all the following commands.
 
 There are 2 ways
 
@@ -30,8 +29,8 @@ sudo ln -s REPO_DIR/power_button.service /etc/systemd/system/power_button.servic
 ```
 
 modify `power_button.service` to replace REPO_DIR with the actual repo path.
-leave the first `REPO_DIR` as is.
 ```bash
+# leave the first `REPO_DIR` as is.
 sed -i "s+REPO_DIR+REPO_DIR+g" power_button.service
 ```
 
