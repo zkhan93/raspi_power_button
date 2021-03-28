@@ -11,7 +11,7 @@ On button press, it should essentially touch these two pins together and then di
 pre-requisites
 make sure you have `python3` and `virtualenv` installed
 ```bash
-sudo apt-get install python3
+sudo apt-get install python3 python3-dev
 pip install virtualenv
 ```
 
