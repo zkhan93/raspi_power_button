@@ -58,3 +58,5 @@ while adding power button in OSMC following packages were needed
 ```bash
 sudo apt-get install gcc-arm-linux-gnueabihf
 ```
+## for Power LED using UART PIN
+https://howchoo.com/g/ytzjyzy4m2e/build-a-simple-raspberry-pi-led-power-status-indicator
