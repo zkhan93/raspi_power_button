@@ -53,4 +53,8 @@ run the setup script to do it.
 ./setup.sh
 ```
 
-
+### OSMC
+while adding power button in OSMC following packages were needed
+```bash
+sudo apt-get install gcc-arm-linux-gnueabihf
+```
