@@ -9,10 +9,10 @@ On button press, it should essentially touch these two pins together and then di
 ## Software Setup
 
 pre-requisites
-make sure you have `python3` and `virtualenv` installed
+make sure you have `python3-dev` and `virtualenv` installed
 ```bash
-sudo apt-get install python3 python3-dev
-pip install virtualenv
+sudo apt-get install python3-dev gcc python3-setuptools
+python3 -m pip install virtualenv
 ```
 
 clone the repository to `/home/pi/repos/rpi_power_button` (feel free to choose a different path) lets call this `REPO_DIR`,
@@ -53,10 +53,6 @@ run the setup script to do it.
 ./setup.sh
 ```
 
-### OSMC
-while adding power button in OSMC following packages were needed
-```bash
-sudo apt-get install gcc-arm-linux-gnueabihf
-```
+
 ## for Power LED using UART PIN
 https://howchoo.com/g/ytzjyzy4m2e/build-a-simple-raspberry-pi-led-power-status-indicator
